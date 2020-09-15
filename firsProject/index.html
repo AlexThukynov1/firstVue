@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>First Vue</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <div id="app">
+        {{message}}
+    </div>
+
+    <!--V-BIND-->
+    <div id="app_1">
+        <span v-bind:title="message">
+            hover on me
+        </span>
+    </div>
+     <!-- V-BIND -->
+
+     <!-- V-IF -->
+    <div id="app_2">
+        <span v-if="seen">
+            Now you are see me
+        </span>
+    </div>
+     <!-- V-IF -->
+
+     <!-- V-FOR -->
+     <div id="app_3">
+         <ol>
+             <li v-for="list_item in list">
+                 {{list_item.text}}
+             </li>
+         </ol>
+     </div>
+     <!-- V-FOR -->
+
+     <!-- V-ON -->
+     <div id="app_4">
+         {{message}}
+         <button v-on:click="reverseMessage">Reverse this message</button>
+     </div>
+     <!-- V-ON -->
+
+     <!-- V-MODEL -->
+     <div id="app_5">
+         <input v-model="message">
+         {{message}}
+     </div>
+     <!-- V-MODEL -->
+    <script src="./script/main.js"></script>   
+</body>
+</html>
