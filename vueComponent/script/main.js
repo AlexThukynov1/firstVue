@@ -14,11 +14,14 @@ Vue.component('list-item', {
 new Vue ({
     el: '#app_1',
     data: {
-        list: [
+        list_group: [
             {id:0, text: 'Eat'},
             {id:1, text: 'Beef'},
-            {id:2, text: 'milk'},
-            {id:3, text: 'bread'}
+            {id:2, text: 'Beef'},
+            {id:3, text: 'Beef'},
+            {id:4, text: 'Beef'},
+            {id:5, text: 'milk'},
+            {id:6, text: 'bread'}
         ]
     }
 })
